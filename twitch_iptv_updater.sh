@@ -12,7 +12,7 @@ while IFS= read -r canal; do
   URL=$(yt-dlp -g "https://www.twitch.tv/$canal" --no-live-from-start 2>/dev/null)
   
   if [ -n "$URL" ]; then
-    echo "#EXTINF:-1 group-title="Twitch" tvg-id=\"$canal\",$canal" >> $LISTA_IPTV
+    echo "#EXTINF:-1 group-title=\"Twitch\" tvg-id=\"$canal\",$canal" >> $LISTA_IPTV
     echo "$URL" >> $LISTA_IPTV
     echo "✅ $canal añadido"
   else
