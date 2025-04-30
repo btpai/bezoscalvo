@@ -28,28 +28,34 @@ def load_channels():
     return channels
 
 def scrape_twitchtracker(channel):
-    """Extrae datos con protecciones contra bans"""
     url = f"https://twitchtracker.com/{channel}/streams"
     headers = {
-        'User-Agent': random.choice(USER_AGENTS),
-        'Accept-Language': 'es-ES,es;q=0.9',
-        'Referer': 'https://twitchtracker.com/'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://www.google.com/',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate'
     }
     
     try:
-        # 2. Delay entre requests
-        time.sleep(REQUEST_DELAY)
+        # Usa sesiones con cookies
+        session = requests.Session()
+        session.headers.update(headers)
         
-        # 3. Timeout y verificación HTTP
-        response = requests.get(url, headers=headers, timeout=TIMEOUT)
+        # Añade delay aleatorio
+        time.sleep(random.uniform(2.5, 5.0))
+        
+        # Simula navegación real
+        session.get("https://twitchtracker.com/", timeout=10)
+        response = session.get(url, timeout=15)
+        
+        # Verifica CloudFlare
+        if "cloudflare" in response.text.lower():
+            raise ConnectionError("🔒 CloudFlare ha bloqueado el acceso")
+            
         response.raise_for_status()
-        
-        # 4. Detección de bloqueos
-        if "access denied" in response.text.lower():
-            raise ConnectionError(f"🚨 TwitchTracker bloqueó el acceso (CAPTCHA)")
-        
         soup = BeautifulSoup(response.text, 'lxml')
-        
+            
         # 5. Extracción robusta con fallbacks
         title_elem = soup.find('h2', class_='stream-title')
         game_elem = soup.find('a', class_='game-link')
