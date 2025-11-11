@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add twitch_iptv.m3u
+          git add twitch_iptv.m3u twitch_iptv_updater.sh
           git commit -m "Auto-update IPTV list"
           git push origin HEAD:main
         env:
