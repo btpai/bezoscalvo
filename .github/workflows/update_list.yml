@@ -1,43 +1,27 @@
-name: Update Twitch IPTV List
+name: Generate Twitch IPTV List
 on:
-  schedule:
-    - cron: "*/10 * * * *"
+  push:
+    paths:
+      - "canales.txt"
+      - "twitch_iptv_updater.sh"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update:
-    timeout-minutes: 5
-    runs-on: ubuntu-latest  # ✅ Puedes usar latest con este método
-    
+  generate:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        
-      - name: Install yt-dlp (standalone)
+
+      - name: Generar lista
+        run: bash twitch_iptv_updater.sh
+
+      - name: Guardar cambios
         run: |
-          # Descargar yt-dlp binario (no necesita dependencias)
-          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-          sudo chmod a+rx /usr/local/bin/yt-dlp
-          
-      - name: Install ffmpeg (preinstalled)
-        run: |
-          # Verificar si ffmpeg ya está instalado
-          if ! command -v ffmpeg &> /dev/null; then
-            echo "FFmpeg no encontrado, pero yt-dlp puede funcionar sin él para M3U"
-          else
-            ffmpeg -version | head -n 1
-          fi
-          
-      - name: Run updater script
-        run: |
-          chmod +x twitch_iptv_updater.sh
-          ./twitch_iptv_updater.sh
-          
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add twitch_iptv.m3u twitch_iptv_updater.sh
-          git commit -m "Auto-update IPTV list"
-          git push origin HEAD:main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add twitch_iptv.m3u
+          git diff --cached --quiet || git commit -m "Actualizar lista IPTV"
+          git push
