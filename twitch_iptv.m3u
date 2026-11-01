@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://twitch-iptv.linx-mgb.workers.dev/epg.xml"
 #EXTINF:-1 group-title="Twitch" tvg-id="mada",mada
 https://twitch-iptv.linx-mgb.workers.dev/mada.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="imeketrefe",imeketrefe
