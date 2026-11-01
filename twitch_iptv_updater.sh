@@ -1,5 +1,5 @@
 #!/bin/bash
-BASE="https://twitch-iptv.tunombre.workers.dev"
+BASE="https://twitch-iptv.linx-mgb.workers.dev"
 
 echo "#EXTM3U" > twitch_iptv.m3u
 while IFS= read -r canal || [ -n "$canal" ]; do
