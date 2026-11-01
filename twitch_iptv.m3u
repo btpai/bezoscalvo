@@ -1,46 +1,42 @@
 #EXTM3U url-tvg="https://twitch-iptv.linx-mgb.workers.dev/epg.xml"
 #EXTINF:-1 group-title="Twitch" tvg-id="mada",mada
 https://twitch-iptv.linx-mgb.workers.dev/mada.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="imeketrefe",imeketrefe
-https://twitch-iptv.linx-mgb.workers.dev/imeketrefe.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="soyfelipez360",soyfelipez360
 https://twitch-iptv.linx-mgb.workers.dev/soyfelipez360.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="asot",asot
-https://twitch-iptv.linx-mgb.workers.dev/asot.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="lamedianinglesa",lamedianinglesa
-https://twitch-iptv.linx-mgb.workers.dev/lamedianinglesa.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="resenascortas",resenascortas
+https://twitch-iptv.linx-mgb.workers.dev/resenascortas.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="lamediainglesa",lamediainglesa
+https://twitch-iptv.linx-mgb.workers.dev/lamediainglesa.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="rosdri_twitch",rosdri_twitch
+https://twitch-iptv.linx-mgb.workers.dev/rosdri_twitch.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="jabiertzo",jabiertzo
+https://twitch-iptv.linx-mgb.workers.dev/jabiertzo.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="baitybait",baitybait
+https://twitch-iptv.linx-mgb.workers.dev/baitybait.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="pazos64",pazos64
+https://twitch-iptv.linx-mgb.workers.dev/pazos64.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="watilive",watilive
+https://twitch-iptv.linx-mgb.workers.dev/watilive.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="srgarrus",srgarrus
 https://twitch-iptv.linx-mgb.workers.dev/srgarrus.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="merlusottv",merlusottv
+https://twitch-iptv.linx-mgb.workers.dev/merlusottv.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="stradi",stradi
 https://twitch-iptv.linx-mgb.workers.dev/stradi.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="keny500",keny500
 https://twitch-iptv.linx-mgb.workers.dev/keny500.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="mery_soldier",mery_soldier
 https://twitch-iptv.linx-mgb.workers.dev/mery_soldier.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="rosdri_twitch",rosdri_twitch
-https://twitch-iptv.linx-mgb.workers.dev/rosdri_twitch.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="saxogaming",saxogaming
-https://twitch-iptv.linx-mgb.workers.dev/saxogaming.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="jabiertzo",jabiertzo
-https://twitch-iptv.linx-mgb.workers.dev/jabiertzo.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="baitybait",baitybait
-https://twitch-iptv.linx-mgb.workers.dev/baitybait.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="mangel",mangel
-https://twitch-iptv.linx-mgb.workers.dev/mangel.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="watilive",watilive
-https://twitch-iptv.linx-mgb.workers.dev/watilive.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="abotepronto",abotepronto
-https://twitch-iptv.linx-mgb.workers.dev/abotepronto.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="pazos64",pazos64
-https://twitch-iptv.linx-mgb.workers.dev/pazos64.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="rebeccavilches",rebeccavilches
 https://twitch-iptv.linx-mgb.workers.dev/rebeccavilches.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="zequio",zequio
 https://twitch-iptv.linx-mgb.workers.dev/zequio.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="merlusottv",merlusottv
-https://twitch-iptv.linx-mgb.workers.dev/merlusottv.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="resenascortas",resenascortas
-https://twitch-iptv.linx-mgb.workers.dev/resenascortas.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="nalak",nalak
+https://twitch-iptv.linx-mgb.workers.dev/nalak.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="shinchan_oficial",shinchan_oficial
+https://twitch-iptv.linx-mgb.workers.dev/shinchan_oficial.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="xem92",xem92
+https://twitch-iptv.linx-mgb.workers.dev/xem92.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="nateacuiki",nateacuiki
 https://twitch-iptv.linx-mgb.workers.dev/nateacuiki.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="alexelcapo",alexelcapo
@@ -49,9 +45,15 @@ https://twitch-iptv.linx-mgb.workers.dev/alexelcapo.m3u8
 https://twitch-iptv.linx-mgb.workers.dev/leviathan.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="josejuanjo",josejuanjo
 https://twitch-iptv.linx-mgb.workers.dev/josejuanjo.m3u8
-#EXTINF:-1 group-title="Twitch" tvg-id="shinchan_oficial",shinchan_oficial
-https://twitch-iptv.linx-mgb.workers.dev/shinchan_oficial.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="mangel",mangel
+https://twitch-iptv.linx-mgb.workers.dev/mangel.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="jorgeyorya",jorgeyorya
 https://twitch-iptv.linx-mgb.workers.dev/jorgeyorya.m3u8
 #EXTINF:-1 group-title="Twitch" tvg-id="nalak",nalak
 https://twitch-iptv.linx-mgb.workers.dev/nalak.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="pixelskaya",pixelskaya
+https://twitch-iptv.linx-mgb.workers.dev/pixelskaya.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="chicocartera",chicocartera
+https://twitch-iptv.linx-mgb.workers.dev/chicocartera.m3u8
+#EXTINF:-1 group-title="Twitch" tvg-id="asot",asot
+https://twitch-iptv.linx-mgb.workers.dev/asot.m3u8
